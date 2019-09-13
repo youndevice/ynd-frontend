@@ -1,0 +1,13 @@
+<h2>{{author.name | uppercase}} details</h2>
+<div><span>Author Id: </span>{{author.id}}</div>
+<div><span>Author Name: </span>{{author.name}}</div>
+
+<div>
+  <label>name:
+    <input [(ngModel)]="author.name" placeholder="name"/>
+  </label>
+</div>
+
+<li *ngFor="let author of authors">
+{{author.name}} --------- {{author.id}}
+</li>
